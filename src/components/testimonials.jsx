@@ -3,27 +3,32 @@ export const Testimonials = (props) => {
     <div id='testimonials'>
       <div className='container'>
         <div className='section-title text-center'>
-          <h2>What our clients say</h2>
+          <h2>Struktur organisasi</h2>
         </div>
-        <div className='row'>
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4'>
-                  <div className='testimonial'>
-                    <div className='testimonial-image'>
-                      {' '}
-                      <img src={d.img} alt='' />{' '}
-                    </div>
-                    <div className='testimonial-content'>
-                      <p>"{d.text}"</p>
-                      <div className='testimonial-meta'> - {d.name} </div>
-                    </div>
-                  </div>
-                </div>
-              ))
-            : 'loading'}
-        </div>
+        <center>
+                <button type='submit' className='btn btn-custom btn-lg'>
+                  Direktur Utama
+                </button>
+        </center>
+        <center>
+        <img src="img/struktur.png" className="img-responsive" alt="" />{" "}
+        </center>
+        <center>
+                 <button type='submit' className='btn btn-custom btn-lg'>
+                  Wakil direktur operasional
+                </button>
+                  <button type='submit' className='btn btn-custom btn-lg'>
+                  Wakil direktur marketing
+                </button>
+                  <button type='submit' className='btn btn-custom btn-lg'>
+                  Wakil direktur manajemem
+                </button>
+                <button type='submit' className='btn btn-custom btn-lg'>
+                  Bendahara
+                </button>
+                </center>
       </div>
     </div>
+    
   )
 }
